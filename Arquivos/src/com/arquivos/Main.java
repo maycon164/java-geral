@@ -11,6 +11,7 @@ public class Main {
 		String palavra = "aula";
 
 		// gr.pesquisarPalavra(file, palavra);
-		gr.quantidadeDePalavras(file);
+		//gr.quantidadeDePalavras(file);
+		gr.gravarTabuada(5);
 	}
 }

@@ -2,7 +2,9 @@ package com.arquivos;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -63,5 +65,18 @@ public class GerenciadorArquivos {
 
 		br.close();
 		palavras.forEach((key, value) -> System.out.println(key + ": " + value));
+	}
+
+	public void gravarTabuada(int num) throws IOException {
+		PrintWriter pw = new PrintWriter(new FileWriter("//home//maycon//Desktop//tab.txt"));
+		pw.printf("---------------\n");
+
+		for (int x = 0; x < 10; x++) {
+			pw.printf("\n" + num + " * " + x + " = " + (x * num));
+		}
+
+		pw.printf("\n---------------");
+		System.out.println("TABUADA DO " + num + " GERADA COM SUCESSO");
+		pw.close();
 	}
 }
