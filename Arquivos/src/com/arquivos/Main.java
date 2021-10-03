@@ -10,6 +10,7 @@ public class Main {
 		String file = "//home//maycon//Desktop//ref";
 		String palavra = "aula";
 
-		gr.pesquisarPalavra(file, palavra);
+		// gr.pesquisarPalavra(file, palavra);
+		gr.quantidadeDePalavras(file);
 	}
 }
